@@ -1,13 +1,13 @@
 export class Restaurant {
-    private _name: string | undefined;
-    private _capacity: number | undefined;
+    private _name: string;
+    private _capacity: number;
 
     constructor(name: string, capacity: number) {
         this.name = name;
         this.capacity = capacity;
     }
 
-    get name(): string | undefined {
+    get name(): string {
         return this._name;
     }
 
@@ -15,7 +15,7 @@ export class Restaurant {
         this._name = value;
     }
 
-    get capacity(): number | undefined {
+    get capacity(): number {
         return this._capacity;
     }
 
